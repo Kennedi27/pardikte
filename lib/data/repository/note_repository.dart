@@ -1,10 +1,12 @@
+import 'package:pardikte/core/utils/crypto_helper.dart';
+
 import '../models/node_model.dart';
 import '../database/notes_database.dart';
-import '../../core/services/encryption_service.dart';
 
 class NoteRepository {
   final NotesDatabase db;
-  final EncryptionService crypto;
+  // final EncryptionService crypto;
+ final CryptoHelper crypto; 
 
   NoteRepository({required this.db, required this.crypto});
 
