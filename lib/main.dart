@@ -3,6 +3,7 @@ import 'package:pardikte/core/utils/crypto_helper.dart';
 import 'package:pardikte/data/database/notes_database.dart';
 import 'package:pardikte/data/models/node_model.dart';
 import 'package:pardikte/features/notes/provider/notes_provider.dart';
+import 'package:pardikte/features/notes/screens/grid_test.dart';
 import 'package:pardikte/features/notes/screens/notes_list_screen.dart';
 import 'package:provider/provider.dart';
 import 'data/repository/note_repository.dart';
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: NotesListScreen(),
+        home: GridTest(),
         onGenerateRoute: (settings) {
           if (settings.name == '/note_detail') {
             final note = settings.arguments as Note;
